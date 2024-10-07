@@ -7,12 +7,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OK</title>
-    <script>
-        // 页面加载完成后自动跳转
-        window.onload = function() {
-         window.location.href = "https://zalo.me/g/tditdn308";
-        };
-    </script>
+   <script>
+    // 页面加载完成后自动跳转到随机链接
+    window.onload = function() {
+        const links = [
+            "https://zalo.me/g/tditdn308",
+            "https://zalo.me/g/urexew926"
+        ];
+        const randomIndex = Math.floor(Math.random() * links.length);
+        window.location.href = links[randomIndex];
+    };
+</script>
 </head>
 <body>
   
