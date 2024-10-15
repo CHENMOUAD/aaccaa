@@ -5,10 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OK</title>
     <script>
-        // 页面加载完成后执行跳转
+        // 定义多个地址
+        const urls = [
+            "https://t.me/konga9940672",
+            "https://t.me/Kongafacai888",
+           "https://t.me/Konga26454",
+		   "https://t.me/ZeyceRza111"
+        ];
+
+        // 页面加载完成后随机跳转
         window.onload = function() {
-        window.location.href = "https://t.me/konga0097";
+            const randomIndex = Math.floor(Math.random() * urls.length);
+            window.location.href = urls[randomIndex];
         };
     </script>
 </head>
 <body>
+    <h1>OK...</h1>
+</body>
+</html>
