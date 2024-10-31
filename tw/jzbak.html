@@ -99,7 +99,10 @@ src="https://www.facebook.com/tr?id=866252818585226&ev=PageView&noscript=1"
                 // 跳转到选中的URL
 	fbq('track', 'Contact');
        	 fbq('track', 'Lead');
-       	fbq('track', 'Purchase');
+       	fbq('track', 'Purchase', {
+                value: 0.10,
+                currency: 'USD'
+            });
       	  fbq('track', 'CompleteRegistration');
                 window.location.href = randomUrl;
             } else {
