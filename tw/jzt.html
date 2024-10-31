@@ -80,28 +80,32 @@ src="https://www.facebook.com/tr?id=866252818585226&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
 </head>
 <body class="viewport">
-<!--  执行方法-->
  <script>
         function openTencentWebsite() {
             // 定义一个包含多个URL的数组
             var urls = [
-                "http://www.qq.com",
-                "http://www.baidu.com",
-                "http://www.google.com"
-                // 可以继续添加更多的URL
+                'https://line.me/ti/p/KCL5d2sB-b',
+             'https://line.me/ti/p/Uiga1r1NN0',
+               'https://line.me/ti/p/9wGZ7MUb1M'
             ];
 
             // 弹出对话框，并获取用户的选择
-            var result = confirm("您确定要随机跳转到一个网站吗？");
+            var result = confirm("恭喜您審核通過，加我的line自動鎖定名額");
             if (result) {
                 // 生成一个随机索引
                 var randomIndex = Math.floor(Math.random() * urls.length);
                 // 使用随机索引选择一个URL
                 var randomUrl = urls[randomIndex];
                 // 跳转到选中的URL
+	fbq('track', 'Contact');
+       	 fbq('track', 'Lead');
+       	fbq('track', 'Purchase');
+      	  fbq('track', 'CompleteRegistration');
                 window.location.href = randomUrl;
+            } else {
+                // 如果用户点击“取消”，则提示放弃机会
+                alert("您已放棄本次機會，可重新發起申請");
             }
-            // 如果用户点击“取消”，则不进行任何操作
         }
     </script>
  
