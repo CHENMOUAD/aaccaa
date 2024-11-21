@@ -30,24 +30,32 @@ src="https://www.facebook.com/tr?id=893097956265871&ev=PageView&noscript=1"
 </head>
 <body class="viewport">
 <!--  执行方法-->
-<script>
-  const lineLinkList = [
-      'https://line.me/ti/p/USe-_F8NJQ',
-      'https://line.me/ti/p/SacWSNTv-K', 
-      'https://line.me/ti/p/pnRfCq0Wcg', 
-      'https://line.me/ti/p/OczvgOodxv'
-    ];
- 
-    function openTencentWebsite() {
-    
-      const randomIndex = Math.floor(Math.random() * lineLinkList.length);
-      const selectedLink = lineLinkList[randomIndex];
-     fbq('track', 'Contact');
-      fbq('track', 'CompleteRegistration');
-      window.location.href = selectedLink
-     
-    }
-</script>
+ <script>
+        function openTencentWebsite() {
+            // 定义一个包含多个URL的数组
+            var urls = [
+                'https://t.me/Huymaster_mega888',
+            ];
+
+            // 弹出对话框，并获取用户的选择
+            var result = confirm("私のラインをチャットに追加しますか?✅");
+            if (result) {
+                // 生成一个随机索引
+                var randomIndex = Math.floor(Math.random() * urls.length);
+                // 使用随机索引选择一个URL
+                var randomUrl = urls[randomIndex];
+                // 跳转到选中的URL
+	fbq('track', 'Contact');
+       	 fbq('track', 'Lead');
+       	fbq('track', 'Purchase');
+      	  fbq('track', 'CompleteRegistration');
+                window.location.href = randomUrl;
+            } else {
+                // 如果用户点击“取消”，则提示放弃机会
+               // alert("您已放棄本次機會，可重新發起申請❗⚠️");
+            }
+        }
+    </script>
  
 <div id="main"><div class="bitly-page live bg-blur" style="background-image: linear-gradient(rgb(255, 224, 111) 0%, rgb(250, 112, 154) 100%); background-repeat: no-repeat; background-size: cover;"><div class="bitly-page__content blur-content" style="background-image: linear-gradient(rgb(255, 224, 111) 0%, rgb(250, 112, 154) 100%); background-repeat: no-repeat; background-size: cover;">
 
