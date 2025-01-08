@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机按钮文字</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="random-button"></button>
+
+    <script>
+        // 随机文字数组
+        const randomTexts = [
+            '点击我！',
+            '按我试试！',
+            '随机按钮',
+            '我很特别',
+            '点击获取惊喜',
+            '这是一个按钮'
+        ];
+
+        // 生成随机文字
+        function generateRandomText() {
+            const randomIndex = Math.floor(Math.random() * randomTexts.length);
+            return randomTexts[randomIndex];
+        }
+
+        // 设置按钮文字
+        const button = document.getElementById('random-button');
+        button.textContent = generateRandomText();
+
+        // 添加点击事件
+        button.addEventListener('click', function() {
+            // 点击后更新按钮文字
+            button.textContent = generateRandomText();
+        });
+    </script>
+</body>
+</html>
